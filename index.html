@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Style HTML</title>
+  <meta name="description" content="">
+  <meta name="author" content="Joe Glombek">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" id="StyleLoader">
+  <link rel="stylesheet" href="styles.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+    <body>
+        <div class="nostyle header">
+                <h1>Style HTML</h1>
+            <p>The task is simple: write some CSS to make the elements on this page as pretty as possible. You may only use CSS - no JavaScript allowed.</p>
+            <p>To join in, fork this on GitHub and change the CSS in <code>styles.css</code>. Your fork will automatically appear in the list under your username.</p>
+        </div>
+        <div class="nostyle list">
+            <h2>Pick a style to preview below or <button onclick="StyleLoader.clear();">Clear Styles</button></h2>
+            <ul>
+                <li>GLOMBEK - <a href="#" onclick="return StyleLoader.load('http://joe.gl/content/site.css');">Preview</a> | <a href="#">View Source</a></li>
+                <li>OPALACADEMY - <a href="#" onclick="return StyleLoader.load('http://beggar-sheep-61505.bitballoon.com/style.css');">Preview</a> | <a href="#">View Source</a></li>
+                
+            </ul>
+            </div>
+        <div class="stylehtml">
+            <label for="textinput">Text Input</label>
+            <input type="text" id="textinput" />
+        </div>
+        <div class="stylehtml">
+            <input type="checkbox" id="checkinput" />
+            <label for="checkinput">Checkbox</label>
+        </div>
+        <div class="stylehtml">
+            <input type="radio" id="radioinput" />
+            <label for="radioinput">Radio</label>
+        </div>
+        <div class="stylehtml">
+            <input type="button" value="input[type=button]" />
+            <button>Button</button>
+        </div>
+        <div class="stylehtml">
+            <fieldset>
+            <legend>Fieldset</legend>
+                <label for="fieldsetusername">Username</label>
+            <input type="text" id="fieldsetusername" />
+                <label for="fieldsetpassword">Password</label>
+            <input type="text" id="fieldsetpassword" />
+                <input type="checkbox" id="fieldsetremember" />
+            <label for="fieldsetremember">Remember Me</label>
+                <button>Login</button>
+            </fieldset>
+        </div>
+        <div class="stylehtml">
+            <form>
+            <p>Form with Paragraph</p>
+                <label for="formusername">Username</label>
+            <input type="text" id="formusername" />
+                <label for="formpassword">Password</label>
+            <input type="text" id="formpassword" />
+                <input type="checkbox" id="formremember" />
+            <label for="formremember">Remember Me</label>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="stylehtml">
+            <p>This is a paragraph.</p>
+        </div>
+        <div class="stylehtml">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+        <div class="stylehtml">
+            <blockquote>Blockquote</blockquote>
+            <p>Paragraph surrounding an <q>inline quote</q>, ta-da!</p>
+            </div>
+        <div class="stylehtml">
+            <pre>Pre tag (for code)</pre>
+            <p>Paragraph surrounding an <code>inline code tag</code>, ta-da!</p>
+            </div>
+        
+        <div class="stylehtml">
+            <figure>
+            <img src="http://placehold.it/350x350" />
+            <figcaption>This is a caption for the image.</figcaption></figure>
+            </div>
+        <div class="stylehtml">
+            <p>This paragraph contains: <a href="#">a link to somewhere within this page</a>; <a href="http://styleht.ml">an external link</a>; and <a>a link with no href at all.</a></p>
+            </div>
+        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="repos.js"></script>
+    </body>
+    </html>
